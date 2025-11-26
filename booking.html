@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Delivery – Hamboa Transportation & Logistics</title>
+  <link rel="stylesheet" href="./css/booking.css"/>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="hl-nav">
+    <ul class="hl-menu">
+      <li><a href="/home.html" class="nav-link">Home</a></li>
+      <li><a href="home.html" class="nav-link">Who We Serve</a></li>
+      <li><a href="home.html" class="nav-link">Services</a></li>
+      <li><a href="home.html" class="nav-link">About</a></li>
+      <li><a href="mailto:info@hamboasolutions.com" class="nav-btn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="booking-hero">
+    <h1 class="shimmer-gold">Book a Delivery</h1>
+    <p class="sub">Fast. Efficient. Reliable.</p>
+  </header>
+
+  <section class="booking-section">
+    <h2 class="shimmer-gold">Schedule Your Transport</h2>
+    <p class="desc">
+      Fill out the information below and a specialist will contact you to complete your booking.
+    </p>
+
+    <form class="booking-form">
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Your Name" required />
+
+      <label>Email Address</label>
+      <input type="email" placeholder="you@example.com" required />
+
+      <label>Phone Number</label>
+      <input type="text" placeholder="(555) 555-5555" required />
+
+      <label>Pickup Location</label>
+      <input type="text" placeholder="Address" required />
+
+      <label>Dropoff Location</label>
+      <input type="text" placeholder="Address" required />
+
+      <label>Description of Cargo</label>
+      <textarea placeholder="Truckload, pallets, equipment…" required></textarea>
+
+      <button type="submit" class="btn-gold">Submit Booking Request</button>
+    </form>
+  </section>
+
+  <footer class="hl-footer">
+    <p class="shimmer-gold">© <span id="yr"></span> Hamboa Transportation & Logistics</p>
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

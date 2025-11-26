@@ -1,0 +1,233 @@
+:root{
+  --black:#000000;
+  --white:#ffffff;
+  --gold1:#C99700;
+  --gold2:#FFD676;
+}
+
+/* BASE */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--black);
+  color:var(--white);
+  font-family:Poppins, system-ui, Arial, sans-serif;
+}
+
+/* SHIMMER GOLD (same vibe as logo) */
+.shimmer-gold{
+  background:linear-gradient(90deg,var(--gold1),var(--gold2),var(--gold1));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:
+    0 0 10px rgba(255,215,80,.65),
+    0 0 22px rgba(255,215,80,.45);
+}
+
+/* NAV */
+.hl-nav{
+  position:fixed;
+  top:0; left:0; width:100%;
+  background:rgba(0,0,0,.85);
+  padding:14px 0;
+  z-index:999;
+  box-shadow:0 0 24px rgba(255,215,80,.25);
+}
+.hl-menu{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin:0; padding:0;
+}
+.nav-link{
+  font-weight:700;
+  text-decoration:none;
+  font-size:16px;
+  background:linear-gradient(90deg,var(--gold1),var(--gold2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 8px rgba(255,215,80,.6);
+}
+.nav-btn{
+  border:1px solid var(--gold2);
+  padding:6px 12px;
+  border-radius:6px;
+}
+
+/* HERO WRAP */
+.hl-hero{
+  padding-top:110px;
+}
+.hl-hero-wrap{
+  width:92%;
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+  align-items:center;
+  min-height:70vh;
+}
+
+/* LEFT SIDE */
+.brand{
+  font-weight:800;
+  letter-spacing:.8px;
+  margin-bottom:10px;
+}
+.hero-title{
+  font-size:42px;
+  font-weight:800;
+  line-height:1.15;
+  margin:0 0 14px 0;
+  color:var(--white);
+}
+.gold-line{
+  width:140px;
+  height:3px;
+  background:linear-gradient(90deg,var(--gold1),var(--gold2),var(--gold1));
+  box-shadow:0 0 15px rgba(255,215,80,.6);
+  margin:10px 0 16px 0;
+}
+.hero-sub{
+  font-size:18px;
+  line-height:1.6;
+  opacity:.95;
+  margin-bottom:18px;
+}
+
+/* BUTTONS */
+.hero-ctas{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  font-weight:800;
+  padding:12px 20px;
+  border-radius:8px;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 14px rgba(255,215,80,.45);
+}
+.btn-gold{
+  background:var(--gold1);
+  color:var(--black);
+}
+.btn-ghost{
+  border:2px solid var(--gold2);
+  color:var(--gold2);
+  background:transparent;
+}
+
+/* HERO LOGO (medium-large brand stamp) */
+.hero-logo{
+  margin-top:8px;
+  width:360px;     /* big enough to notice */
+  max-width:70%;
+  height:auto;
+  filter:drop-shadow(0 0 16px rgba(255,215,80,.45));
+}
+
+/* RIGHT SIDE (MAP) */
+.hl-hero-right{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero-map{
+  width:95%;
+  max-width:520px;
+  height:auto;
+  opacity:.9;
+  filter:drop-shadow(0 0 18px rgba(255,215,80,.35));
+}
+
+/* SECTIONS */
+.hl-section{
+  width:92%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:70px 0;
+  text-align:center;
+}
+.section-title{
+  font-size:30px;
+  font-weight:900;
+  margin-bottom:26px;
+}
+
+/* SHUFFLING CARDS (the exact vibe you liked) */
+.shuffle-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-top:10px;
+}
+.shuffle-card{
+  background:rgba(0,0,0,0.85);
+  border:1px solid #d4af37;
+  border-radius:12px;
+  padding:26px;
+  color:white;
+  font-weight:700;
+  font-size:1.15rem;
+  cursor:pointer;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+  box-shadow:
+    0 0 12px rgba(255,215,80,.35),
+    0 0 26px rgba(255,215,80,.18);
+}
+.shuffle-card small{
+  font-weight:500;
+  opacity:.9;
+}
+.shuffle-card:hover{
+  transform:translateY(-8px) scale(1.03) rotateX(4deg) rotateY(-4deg);
+  border-color:#ffda56;
+  box-shadow:
+    0 0 20px rgba(255,215,80,.8),
+    0 0 40px rgba(255,215,80,.55);
+}
+
+/* ABOUT LIST */
+.about-list{
+  list-style:none;
+  padding:0;
+  font-size:18px;
+  line-height:2;
+  margin:0;
+}
+
+/* FOOTER */
+.hl-footer{
+  text-align:center;
+  padding:30px 0 50px;
+  border-top:1px solid rgba(255,215,80,.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .hl-hero-wrap{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .gold-line{
+    margin:10px auto 16px auto;
+  }
+  .hero-ctas{
+    justify-content:center;
+  }
+  .hero-logo{
+    max-width:80%;
+  }
+}
