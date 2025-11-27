@@ -1,0 +1,63 @@
+:root{
+  --black:#000000;
+  --white:#ffffff;
+  --gold1:#C99700;
+  --gold2:#FFD676;
+}
+
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:Poppins, system-ui, sans-serif;
+  margin:0;
+}
+
+/* GOLD SHIMMER */
+.shimmer-gold{
+  background:linear-gradient(90deg,var(--gold1),var(--gold2),var(--gold1));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SIMPLE BACK HOME LINK */
+.about-nav{
+  padding:20px;
+}
+.back-home{
+  font-size:18px;
+  font-weight:700;
+  background:linear-gradient(90deg,var(--gold1),var(--gold2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-decoration:none;
+}
+
+/* MATCHES HOME SECTIONS */
+.hl-section{
+  width:92%;
+  max-width:1200px;
+  margin:0 auto;
+  padding-top:60px;
+  padding-bottom:60px;
+  text-align:center;
+}
+
+/* COMPANY NAME BIG + GOLD */
+.company-name{
+  font-size:28px;
+  font-weight:800;
+  display:block;
+  margin-bottom:10px;
+}
+
+/* READABLE TEXT */
+.about-text{
+  font-size:19px;
+  line-height:1.8;
+  font-weight:500;
+  color:var(--white);
+  opacity:0.95;
+  max-width:850px;
+  margin:20px auto 0;
+  text-align:center;
+}
