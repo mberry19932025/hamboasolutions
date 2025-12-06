@@ -259,3 +259,60 @@ body{
     max-width:80%;
   }
 }
+/* -------------------------------------- */
+/* 24/7 SUPPORT BAR                       */
+/* -------------------------------------- */
+.support-bar {
+  background: rgba(0,0,0,0.85);
+  padding: 16px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,215,80,.25);
+  border-bottom: 1px solid rgba(255,215,80,.25);
+}
+
+.support-text {
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--gold1), var(--gold2), var(--gold1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(255,215,80,.55);
+}
+
+
+/* -------------------------------------- */
+/* CONTACT PHONE LINE                     */
+/* -------------------------------------- */
+.phone-line {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold2);
+  text-shadow: 0 0 10px rgba(255,215,80,.4);
+}
+
+
+/* -------------------------------------- */
+/* FLOATING CALL BUTTON                   */
+/* -------------------------------------- */
+.call-float {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  background: linear-gradient(90deg,var(--gold1),var(--gold2));
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--black);
+  box-shadow: 0 0 25px rgba(255,215,80,.55);
+  z-index: 2000;
+  border: 2px solid var(--gold2);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.call-float:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px rgba(255,215,80,.8);
+}
